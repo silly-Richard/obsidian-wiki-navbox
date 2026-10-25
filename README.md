@@ -328,26 +328,6 @@ npm run build
 
 Browser preview: open [`preview/en.html`](preview/en.html) for English or [`preview/index.html`](preview/index.html) for Chinese. Append `?theme=light` or `?theme=dark` to show a single theme.
 
-### Publishing a release
-
-Create a GitHub Release whose tag matches `manifest.json` (for example `1.0.0`) and attach these three files **separately**:
-
-```text
-dist/wiki-navbox/main.js
-dist/wiki-navbox/manifest.json
-dist/wiki-navbox/styles.css
-```
-
-Do not upload a zip archive. On GitHub, use **Releases → Draft a new release** and attach the three files one by one.
-
-GitHub will still show auto-generated **Source code (zip)** and **Source code (tar.gz)** links; those are repository snapshots, not plugin installation packages. Ignore them.
-
-With GitHub CLI:
-
-```bash
-gh release create 1.0.0 dist/wiki-navbox/main.js dist/wiki-navbox/manifest.json dist/wiki-navbox/styles.css --title "Wiki Navbox 1.0.0" --notes "Initial release."
-```
-
 ### Structure
 
 ```text
