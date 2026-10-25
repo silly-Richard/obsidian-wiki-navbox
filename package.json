@@ -1,0 +1,26 @@
+{
+  "name": "obsidian-wiki-navbox",
+  "version": "1.0.0",
+  "description": "A Wikipedia-style collapsible navbox for Obsidian.",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "node scripts/build.mjs --watch --skip-typecheck",
+    "preview": "node scripts/build.mjs --skip-typecheck",
+    "typecheck": "tsc --noEmit",
+    "test": "node scripts/test.mjs"
+  },
+  "keywords": [
+    "obsidian",
+    "plugin",
+    "navbox",
+    "wikipedia"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "esbuild": "^0.25.0",
+    "js-yaml": "^5.5.0",
+    "obsidian": "^1.8.7",
+    "typescript": "^5.7.0"
+  }
+}

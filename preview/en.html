@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Wiki Navbox — a Wikipedia-style collapsible navbox for Obsidian"
+    />
+    <title>Wiki Navbox · Obsidian plugin preview</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="preview.css" />
+  </head>
+  <body data-lang="en">
+    <div class="demo-shell">
+      <header class="demo-hero">
+        <div class="demo-topline">
+          <span class="demo-mark" aria-hidden="true">W</span>
+          <span>Obsidian Plugin</span>
+          <span class="demo-badge">v1.0.0</span>
+        </div>
+        <h1 class="demo-hero__title">Wiki <span>Navbox</span></h1>
+        <p class="demo-hero__text">
+          A Wikipedia-style collapsible navigation table for Obsidian:
+          View · Edit, two-level groups, wiki links, light and dark themes,
+          and remembered collapse state.
+        </p>
+      </header>
+
+      <main class="demo-main">
+        <section class="demo-panel demo-panel--light theme-light">
+          <div class="demo-panel__head">
+            <span class="demo-dot" aria-hidden="true"></span>
+            <span>Light theme</span>
+            <span class="demo-hint">Click [Collapse] or the View · Edit actions</span>
+          </div>
+          <div id="light"></div>
+        </section>
+
+        <section class="demo-panel demo-panel--dark theme-dark">
+          <div class="demo-panel__head">
+            <span class="demo-dot" aria-hidden="true"></span>
+            <span>Dark theme</span>
+            <span class="demo-hint">Adapts to Obsidian theme variables</span>
+          </div>
+          <div id="dark"></div>
+        </section>
+
+        <p class="demo-footnote">
+          Rendered by the real <code>```wiki-navbox</code> code path, with no
+          network requests. In Obsidian, internal links use the native link
+          system.
+        </p>
+      </main>
+    </div>
+
+    <div id="demo-toast" role="status" aria-live="polite"></div>
+    <script src="demo.js"></script>
+  </body>
+</html>

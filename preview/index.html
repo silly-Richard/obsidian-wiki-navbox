@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Wiki Navbox — 仿维基百科折叠导航框的 Obsidian 插件预览"
+    />
+    <title>Wiki Navbox · Obsidian 插件预览</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="preview.css" />
+  </head>
+  <body>
+    <div class="demo-shell">
+      <header class="demo-hero">
+        <div class="demo-topline">
+          <span class="demo-mark" aria-hidden="true">W</span>
+          <span>Obsidian Plugin</span>
+          <span class="demo-badge">v1.0.0</span>
+        </div>
+        <h1 class="demo-hero__title">Wiki <span>Navbox</span></h1>
+        <p class="demo-hero__text">
+          在笔记里嵌入一张像维基百科条目页的折叠导航表：查 · 编（“论”默认收起）、
+          两级分组、Wiki 链接、明暗主题，以及可记忆的折叠状态。
+        </p>
+      </header>
+
+      <main class="demo-main">
+        <section class="demo-panel demo-panel--light theme-light">
+          <div class="demo-panel__head">
+            <span class="demo-dot" aria-hidden="true"></span>
+            <span>Light · 明亮主题</span>
+            <span class="demo-hint">点击 [折叠] 或标题旁的“查 · 编”</span>
+          </div>
+          <div id="light"></div>
+        </section>
+
+        <section class="demo-panel demo-panel--dark theme-dark">
+          <div class="demo-panel__head">
+            <span class="demo-dot" aria-hidden="true"></span>
+            <span>Dark · 深色主题</span>
+            <span class="demo-hint">自动适配 Obsidian 主题变量</span>
+          </div>
+          <div id="dark"></div>
+        </section>
+
+        <p class="demo-footnote">
+          本页由 <code>```wiki-navbox</code> 代码块的真实渲染代码生成，不连接网络。
+          在 Obsidian 中，内部链接会交给原生链接系统处理。
+        </p>
+      </main>
+    </div>
+
+    <div id="demo-toast" role="status" aria-live="polite"></div>
+    <script src="demo.js"></script>
+  </body>
+</html>

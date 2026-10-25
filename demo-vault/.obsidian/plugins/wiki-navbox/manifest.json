@@ -1,0 +1,9 @@
+{
+  "id": "wiki-navbox",
+  "name": "Wiki Navbox",
+  "version": "1.0.0",
+  "minAppVersion": "1.4.0",
+  "description": "A Wikipedia-style collapsible navbox for Obsidian with View/Talk/Edit actions, two-level groups, wiki links, images, and light/dark themes.",
+  "author": "Wiki Navbox contributors",
+  "isDesktopOnly": false
+}

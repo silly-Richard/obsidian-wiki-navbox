@@ -1,0 +1,12 @@
+node_modules/
+.npm-cache/
+.test/
+.chrome-*/
+npm-debug.log*
+data.json
+main.js
+main.js.map
+*.zip
+demo-vault/.obsidian/workspace*.json
+.DS_Store
+Thumbs.db
