@@ -326,25 +326,6 @@ npm run build
 
 浏览器预览：直接打开 [`preview/index.html`](preview/index.html)。加上 `?theme=light` 或 `?theme=dark` 可只看单一主题。
 
-### 发布 Release
-
-创建一个与 `manifest.json` 版本一致的 GitHub Release（例如 `1.0.0`），并**分别**上传以下三个文件：
-
-```text
-dist/wiki-navbox/main.js
-dist/wiki-navbox/manifest.json
-dist/wiki-navbox/styles.css
-```
-
-不要上传 zip 压缩包。在 GitHub 上使用 **Releases → Draft a new release**，逐个添加这三个文件。
-
-GitHub 仍会自动显示 **Source code (zip)** 和 **Source code (tar.gz)**，它们是仓库源码快照，不是插件安装包，忽略即可。
-
-使用 GitHub CLI：
-
-```bash
-gh release create 1.0.0 dist/wiki-navbox/main.js dist/wiki-navbox/manifest.json dist/wiki-navbox/styles.css --title "Wiki Navbox 1.0.0" --notes "Initial release."
-```
 
 ### 目录
 
